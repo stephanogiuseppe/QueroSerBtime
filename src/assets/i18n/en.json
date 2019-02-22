@@ -1,0 +1,20 @@
+{
+  "pages": {
+    "dojo-test": {
+      "title": "Dojo Test - Change",
+      "subtitle": "Change - Result",
+      "paragraph-1": "TODO",
+      "paragraph-2": "TODO",
+      "paragraph-3": "TODO",
+      "form": {
+        "price-control": "Price",
+        "money-control": "Money"
+      },
+      "available-money": "Available cash",
+      "result": "Cash change"
+    },
+    "not-found": {
+      "title": "Page not found"
+    }
+  }
+}

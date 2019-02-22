@@ -1,0 +1,55 @@
+@import 'src/assets/sass/color';
+
+.dojo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  background: $black;
+
+  .dojo-container {
+    background-color: $light-pink;
+    display: flex;
+
+    .dojo-content {
+      height: 22rem;
+      width: 22rem;
+      padding: 2rem;
+      color: $pink;
+      border-right: 1px solid $red;
+      &:last-child {
+        border-right: none;
+      }
+      .paragraph {
+        margin: 1rem 0 0 0;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.result {
+  margin: 1rem 0;
+
+  .title {
+    color: $red;
+  }
+
+  .description {
+    color: $pink;
+  }
+
+  .money {
+    &:before {
+      content: 'R$ ';
+    }
+
+    &:not(:last-child) {
+      &:after {
+        content: ', ';
+      }
+    }
+  }
+}

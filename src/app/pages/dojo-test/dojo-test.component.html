@@ -1,0 +1,57 @@
+<div class="dojo">
+  <div class="dojo-container">
+    <aside class="dojo-content">
+      <h1 class="title">{{ 'pages.dojo-test.title' | translate }}</h1>
+
+      <p class="paragraph">
+        {{ 'pages.dojo-test.paragraph-1' | translate }}
+      </p>
+
+      <p class="paragraph">
+        {{ 'pages.dojo-test.paragraph-2' | translate }}
+      </p>
+
+      <p class="paragraph">
+        {{ 'pages.dojo-test.paragraph-3' | translate }}
+      </p>
+
+      <p class="paragraph">
+        <a href="http://dojopuzzles.com/problemas/exibe/troco/" target="_blank" class="external-link">http://dojopuzzles.com/problemas/exibe/troco/</a>
+      </p>
+    </aside>
+    <main class="dojo-content">
+
+      <h2 class="subtitle">{{ 'pages.dojo-test.subtitle' | translate }}</h2>
+
+      <form [formGroup]="changeMoneyForm">
+        <label for="price-control" class="input-float-label">
+          <input type="number" id="price-control" placeholder="&nbsp;" formControlName="priceControl" required />
+          <span class="input-float">{{ 'pages.dojo-test.form.price-control' | translate }}</span>
+        </label>
+
+        <label for="money-control" class="input-float-label">
+          <input type="number" id="money-control" placeholder="&nbsp;" formControlName="moneyControl" required />
+          <span class="input-float">{{ 'pages.dojo-test.form.money-control' | translate }}</span>
+        </label>
+      </form>
+
+      <div class="result" *ngIf="MONEY_ARRAY.length">
+        <p class="title">{{ 'pages.dojo-test.available-money' | translate }}</p>
+        <span class="money" *ngFor="let money of MONEY_ARRAY">
+          <span>{{ money }}</span>
+        </span>
+      </div>
+
+      <div class="result" *ngIf="result.length">
+        <p class="title">{{ 'pages.dojo-test.result' | translate }}</p>
+        <span class="money" *ngFor="let money of result">
+          <span>{{ money }}</span>
+        </span>
+      </div>
+
+      <p class="paragraph">
+        <a href="https://github.com/stephanogiuseppe/QueroSerBtime" target="_blank" class="external-link">Código: https://github.com/stephanogiuseppe/QueroSerBtime</a>
+      </p>
+    </main>
+  </div>
+</div>
