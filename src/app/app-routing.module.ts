@@ -5,8 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: 'test', loadChildren: './pages/dojo-test/dojo-test.module#DojoTestModule' },
-  { path: '', pathMatch: 'full', redirectTo: '/test' },
+  { path: '', loadChildren: './pages/dojo-test/dojo-test.module#DojoTestModule' },
   { path: '**', component: NotFoundComponent }
 ];
 
