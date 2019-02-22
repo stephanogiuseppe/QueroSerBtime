@@ -53,3 +53,30 @@
     }
   }
 }
+
+
+@media screen and (max-width: 840px) {
+  .dojo {
+
+    height: auto;
+    min-height: 100vh;
+
+    .dojo-container {
+      flex-direction: column;
+      margin: 1rem;
+  
+      .dojo-content {
+        height: auto;
+        width: 80vw;
+        border: none;
+        border-bottom: 1px solid $red;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+
